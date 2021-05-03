@@ -175,3 +175,40 @@ ul:hover {
     width: 200px;
     margin-top:30px ;
 }
+.bear {
+    width: 200px;
+    height: 100px;
+    display: flex;
+  
+    position: fixed;
+    bottom: 0;
+    background: url(images/bear.png) no-repeat;
+    animation: bear .4s steps(7) infinite, move 5s  infinite;
+
+}
+
+@keyframes bear {
+    0% {
+        background-position: 0, 0;
+    }
+
+    100% {
+        background-position: -1400px, 0;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-200px ,0)
+    }
+
+    99.999% {
+        transform: translate(1520px, 0);
+    }
+   
+    
+   100% {
+        transform: translate(-200px,0);
+    }
+
+}
