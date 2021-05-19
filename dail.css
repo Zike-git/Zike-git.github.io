@@ -9,8 +9,11 @@ div {
     width: 200px;
     height: 200px;
     display: flex;
-    margin: 100px auto;
+    float: right;
+    margin-top: 50px;
+    margin-right: 50px;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.726);
     /* border: 3px solid skyblue; */
     box-shadow: 8px 5px 24px -10px grey, -6px -3px 6px -9px grey inset, 2px -3px 6px -6px grey inset, 2px 3px 6px -8px grey inset;
     justify-content: center;
