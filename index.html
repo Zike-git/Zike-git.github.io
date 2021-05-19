@@ -7,15 +7,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>收藏夹</title>
     <link rel="stylesheet" href="收藏夹.css">
+    <link rel="stylesheet" href="dail.css">
 </head>
 
 <body>
     <!-- 顶部搜索和旋转的图片等 -->
     <div class="top">
-        <!-- <div class="xuanz"></div> -->
-        <div class="ss">
-            <input type="text" class="sousuo"><button class="anniu">搜索</button>
+        <div class="dail">
+            <div class="dail2">
+                <div class="dail3"></div>
+                <div class="Scale">
+                    <div class="scale1"></div>
+                    <div class="scale2"></div>
+                    <div class="scale3"></div>
+                    <div class="scale4"></div>
+                    <div class="scale5"></div>
+                    <div class="scale6"></div>
+                    <div class="scale7"></div>
+                    <div class="scale8"></div>
+                    <div class="scale9"></div>
+                    <div class="scale10"></div>
+                    <div class="scale11"></div>
+                    <div class="scale12"></div>
+                </div>
+                <div class="accurate">
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                    <div class="accuratechild"></div>
+                </div>
+                <div class="centerpoint1"></div>
+                <div class="centerpoint2"></div>
+                <div class="centerpoint3"></div>
+                <div class="pointer">
+                    <div class="ss">
+                        <div id="zz" class="pointer1"></div>
+                        <div id="zz" class="pointer2"></div>
+                    </div>
+                    <div class="min">
+                        <div id="zz" class="pointer3"></div>
+                        <div class="pointer4"></div>
+                        <div class="pointer5"></div>
+                    </div>
+                    <div class="hr">
+
+                        <div class="pointer6"></div>
+                        <div class="pointer7"></div>
+                        <div class="pointer8"></div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- <div class="xuanz"></div> -->
+        <!-- 搜索部分 -->
+        <!-- <div class="ss">
+            <input type="text" class="sousuo"><button class="anniu">搜索</button>
+        </div> -->
         <!-- <div class="city"></div> -->
     </div>
     <!-- 收藏的网页超链接部分 -->
@@ -466,5 +569,21 @@
         </div>
     </div>
 </body>
+<script>
+    var hour = document.querySelector('.hr');
+    var second = document.querySelector('.ss');
+    var minute = document.querySelector('.min')
+
+    setInterval(function () {
+        var now = new Date();
+        var Second = now.getSeconds();
+        var Minute = now.getMinutes();
+        var Hour = now.getHours();
+
+        hour.style.transform = 'rotate(' + (Hour + Minute / 60) * 30 + 'deg)';
+        minute.style.transform = 'rotate(' + (Minute + Second / 60) * 6 + 'deg)';
+        second.style.transform = 'rotate(' + (Second) * 6 + 'deg)';
+    }, 1000)
+</script>
 
 </html>
