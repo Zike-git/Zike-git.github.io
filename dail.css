@@ -1,12 +1,13 @@
 .dail {
     position: absolute;
-    top: 0;
+
     right: 50px;
     width: 200px;
     height: 200px;
     display: flex;
     margin: 50px;
     margin-top: 150px;
+    margin-right: 250px;
     border-radius: 50%;
     background-color: white;
     /* border: 3px solid skyblue; */
