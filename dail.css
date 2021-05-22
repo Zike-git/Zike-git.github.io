@@ -1,19 +1,14 @@
-div {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .dail {
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 50px;
     width: 200px;
     height: 200px;
     display: flex;
-    float: right;
-    margin-top: 50px;
-    margin-right: 50px;
+    margin: 50px;
+    margin-top: 150px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.726);
+    background-color: white;
     /* border: 3px solid skyblue; */
     box-shadow: 8px 5px 24px -10px grey, -6px -3px 6px -9px grey inset, 2px -3px 6px -6px grey inset, 2px 3px 6px -8px grey inset;
     justify-content: center;

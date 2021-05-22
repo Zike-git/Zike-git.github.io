@@ -2,17 +2,112 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>收藏夹</title>
-    <link rel="stylesheet" href="收藏夹.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY HTML</title>
+    <!-- ctrl+h即可调出查询与替换窗口 -->
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="dail.css">
+    <link rel="stylesheet" href="calendar.css">
+
 </head>
 
 <body>
-    <!-- 顶部搜索和旋转的图片等 -->
-    <div class="top">
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="javascript:;">学校学习</a>
+                    <ol>
+                        <li><a href="https://www.tust.edu.cn/" target="_blank">天津科技大学</a></li>
+                        <li><a href="http://jw.tust.edu.cn/" target="_blank">天津科技大学教务处</a></li>
+                        <li><a href="https://www.tust.edu.cn/" target="_blank">天津科技大学第二课堂</a></li>
+                        <li><a href="https://www.tust.edu.cn/" target="_blank">智慧团建</a></li>
+                        <li><a href="https://www.cn-ki.net/" target="_blank">镜像知网</a></li>
+                        <li><a href="https://www.w3school.com.cn/" target="_blank">w3school</a></li>
+                        <li><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a></li>
+
+                    </ol>
+                </li>
+                <li>
+                    <a href="javascript:;">图片壁纸</a>
+                    <ol>
+                        <li><a href="https://pic.netbian.com/" target="_blank">彼岸图网</a></li>
+                        <li><a href="https://mixkit.co/" target="_blank">高质量图片</a></li>
+                        <li><a href="http://duososo.com/index.php" target="_blank">图片搜索</a></li>
+
+                    </ol>
+                </li>
+                <li>
+                    <a href="javascript:;">创作素材</a>
+                    <ol>
+                        <li><a href="https://www.iconfont.cn/" target="_blank">阿里矢量图标</a></li>
+                        <li><a href="https://ziyouziti.com/" target="_blank">免费字体</a></li>
+                        <li><a href="https://www.ear0.com/" target="_blank">自由之聆</a></li>
+
+                    </ol>
+                </li>
+                <li>
+                    <a href="javascript:;">视频音乐</a>
+                    <ol>
+                        <li><a href="https://www.cupfox.com/" target="_blank">茶杯狐</a></li>
+                        <li><a href="https://www.dadatuw.com/" target="_blank">达达兔</a></li>
+                        <li><a href="https://www.bilibili.com/" target="_blank">B站</a></li>
+                        <li><a href="http://47.112.23.238/" target="_blank">免费音乐</a></li>
+
+                    </ol>
+                </li>
+                <li>
+                    <a href="javascript:;">模板</a>
+                    <ol>
+                        <li><a href="https://www.woodo.cn/template/?type=slides" target="_blank">ppt模板</a></li>
+                        <li><a href="http://www.1ppt.com/" target="_blank">免费ppt模板</a></li>
+                        <li><a href="https://www.ypppt.com/" target="_blank">免费ppt模板</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="javascript:;">资源</a>
+                    <ol>
+                        <li><a href="https://adzhp.cn/" target="_blank">爱达杂货铺</a></li>
+                        <li><a href="http://softgj.com/" target="_blank">软件管家</a></li>
+                        <li><a href="https://www.mac-soft.cn/" target="_blank">麦克软件园</a></li>
+                        <li><a href="https://iao.su/" target="_blank">分享为王</a></li>
+                        <li><a href="https://greasyfork.org/zh-CN" target="_blank">脚本</a></li>
+                    </ol>
+                </li>
+                <!-- 这个元素来定义滑动的线条 -->
+                <li class="underline"></li>
+            </ul>
+        </div>
+
+    </div>
+    <!-- 中间部分 -->
+    <div class="main">
+        <div class="calendar">
+            <div class="contemporary">
+                <div id="datenow">25</div>
+                <div id="daynow">MONDAY</div>
+            </div>
+            <div class="month-year">
+                <div id="prev"></div>
+                <div id="month">MAY</div>
+                <div id="year">2022</div>
+                <span id="next"></span>
+            </div>
+            <ul class="card">
+                <li>MON</li>
+                <li>TUE</li>
+                <li>WED</li>
+                <li>THU</li>
+                <li>FRI</li>
+                <li>SAT</li>
+                <li>SUN</li>
+            </ul>
+            <ul id="add">
+
+            </ul>
+        </div>
         <div class="dail">
             <div class="dail2">
                 <div class="dail3"></div>
@@ -114,452 +209,9 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="xuanz"></div> -->
-        <!-- 搜索部分 -->
-        <!-- <div class="ss">
-            <input type="text" class="sousuo"><button class="anniu">搜索</button>
-        </div> -->
-        <!-- <div class="city"></div> -->
+
     </div>
-    <!-- 收藏的网页超链接部分 -->
-    <div class="main">
-        <!-- 1 -->
-        <ul>
-            <div class="text1">学校学习</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.tust.edu.cn/" target="_blank">
-                        <div class="front">天津科技大学</div>
-                        <div class="bottom">www.tust.edu.cn</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="http://jw.tust.edu.cn/" target="_blank">
-                        <div class="front">天津科技大学教务处</div>
-                        <div class="bottom">jw.tust.edu.cn/</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.tust.edu.cn/" target="_blank">
-                        <div class="front">天津科技大学第二课堂</div>
-                        <div class="bottom">tulikt.dyxf.chaoxing.com</div>
-                    </a>
-                </div>
-            </li>
-
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.tust.edu.cn/" target="_blank">
-                        <div class="front">智慧团建</div>
-                        <div class="bottom">zhtj.youth.cn</div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 2 -->
-        <ul>
-            <div class="text1">图片壁纸</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://pic.netbian.com/" target="_blank">
-                        <div class="front">彼岸图网</div>
-                        <div class="bottom">pic.netbian.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://mixkit.co/" target="_blank">
-                        <div class="front">高质量图片</div>
-                        <div class="bottom">mixkit.co</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="http://duososo.com/index.php" target="_blank">
-                        <div class="front">图片搜索</div>
-                        <div class="bottom">duososo.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 3 -->
-        <ul>
-            <div class="text1">创作素材</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.iconfont.cn/" target="_blank">
-                        <div class="front">阿里矢量图标</div>
-                        <div class="bottom">www.iconfont.cn</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://ziyouziti.com/" target="_blank">
-                        <div class="front">免费字体</div>
-                        <div class="bottom">ziyouziti.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.ear0.com/" target="_blank">
-                        <div class="front">自由之聆</div>
-                        <div class="bottom">www.ear0.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 4 -->
-        <ul>
-            <div class="text1">视频电影</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.cupfox.com/" target="_blank">
-                        <div class="front">茶杯狐</div>
-                        <div class="bottom">www.cupfox.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.dadatuw.com/" target="_blank">
-                        <div class="front">达达兔</div>
-                        <div class="bottom">www.dadatuw.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.bilibili.com/" target="_blank">
-                        <div class="front">B站</div>
-                        <div class="bottom">www.bilibili.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 5 -->
-        <ul>
-            <div class="text1">模板</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.woodo.cn/template/?type=slides" target="_blank">
-                        <div class="front">ppt模板</div>
-                        <div class="bottom">www.woodo.cn</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="http://www.1ppt.com/" target="_blank">
-                        <div class="front">免费ppt模板</div>
-                        <div class="bottom">www.1ppt.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.ypppt.com/" target="_blank">
-                        <div class="front">免费ppt模板</div>
-                        <div class="bottom">www.ypppt.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 6 -->
-        <ul>
-            <div class="text1">论文</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.cn-ki.net/" target="_blank">
-                        <div class="front">镜像知网</div>
-                        <div class="bottom">www.cn-ki.net</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 7 -->
-        <ul>
-            <div class="text1">导航</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://adzhp.cn/" target="_blank">
-                        <div class="front">爱达杂货铺</div>
-                        <div class="bottom">adzhp.cn</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 8 -->
-        <ul>
-            <div class="text1">软件</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="http://softgj.com/" target="_blank">
-                        <div class="front">软件管家</div>
-                        <div class="bottom">softgj.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.mac-soft.cn/" target="_blank">
-                        <div class="front">麦克软件园</div>
-                        <div class="bottom">www.mac-soft.cn</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 9 -->
-        <ul>
-            <div class="text1">自学</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://www.w3school.com.cn/" target="_blank">
-                        <div class="front">w3school</div>
-                        <div class="bottom">www.w3school.com.cn</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://developer.mozilla.org/zh-CN/" target="_blank">
-                        <div class="front">MDN</div>
-                        <div class="bottom">developer.mozilla.org</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 10 -->
-        <ul>
-            <div class="text1">油猴脚本</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://greasyfork.org/zh-CN" target="_blank">
-                        <div class="front">脚本</div>
-                        <div class="bottom">greasyfork.org</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 11 -->
-        <ul>
-            <div class="text1">音乐</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="http://music.jsososo.com/" target="_blank">
-                        <div class="front">网易云</div>
-                        <div class="bottom">music.jsososo.com</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="http://47.112.23.238/" target="_blank">
-                        <div class="front">多平台</div>
-                        <div class="bottom">47.112.23.238</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <!-- 12 -->
-        <ul>
-            <div class="text1">分享</div>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="https://iao.su/" target="_blank">
-                        <div class="front">分享为王</div>
-                        <div class="bottom">iao.su</div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-            <li>
-                <div class="box">
-                    <a class="minicard" href="#" target="_blank">
-                        <div class="front">（空）</div>
-                        <div class="bottom"></div>
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-
-
-    <!-- 雪山 -->
+    <!-- 雪山和熊 -->
     <div class="flex">
         <div class="mountains">
             <div class="mountain1"></div>
@@ -568,22 +220,8 @@
             <div class="bear"></div>
         </div>
     </div>
+
 </body>
-<script>
-    var hour = document.querySelector('.hr');
-    var second = document.querySelector('.ss');
-    var minute = document.querySelector('.min')
-
-    setInterval(function () {
-        var now = new Date();
-        var Second = now.getSeconds();
-        var Minute = now.getMinutes();
-        var Hour = now.getHours();
-
-        hour.style.transform = 'rotate(' + (Hour + Minute / 60) * 30 + 'deg)';
-        minute.style.transform = 'rotate(' + (Minute + Second / 60) * 6 + 'deg)';
-        second.style.transform = 'rotate(' + (Second) * 6 + 'deg)';
-    }, 1000)
-</script>
+<script src="js.js"></script>
 
 </html>
