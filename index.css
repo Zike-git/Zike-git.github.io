@@ -15,14 +15,16 @@ body {
 
 body {
     /* 宽度占浏览器可视区域的高度 */
-    width: 100vm;
+
+    height: 100%;
     background-color: mediumturquoise;
 }
 
 .main {
     position: relative;
-
-    z-index: -1;
+    height: 1200px;
+    width: 100%;
+    /* z-index: -1; */
 }
 
 li {
@@ -269,3 +271,47 @@ a {
         transform: translate(765px, 0);
     }
 }
+
+/* 倒计时----------------------------------------------- */
+.djs {
+    margin: 100px 0 0 225px;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    border: 5px white solid;
+    background-color: mediumturquoise;
+    user-select: none;
+}
+
+.djs>ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.djs>ul>li {
+    /* position: absolute; */
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.djs>ul li:nth-of-type(odd) {
+    color: mediumturquoise;
+}
+
+.djs>ul li:nth-of-type(even) {
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+}
+
+/* -------------------------------------- */
