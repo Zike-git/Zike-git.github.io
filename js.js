@@ -86,9 +86,9 @@ function countdown(settime) {
 
     var d = parseInt(seconds / 60 / 60 / 24);
     d = d < 10 ? '0' + d : d;
-    var h = parseInt(seconds / 60 / 60);
+    var h = parseInt(seconds / 60 / 60 % 24);
     h = h < 10 ? '0' + h : h;
-    var m = parseInt(seconds / 60);
+    var m = parseInt(seconds / 60 % 60);
     m = m < 10 ? '0' + m : m;
     var s = parseInt(seconds % 60);
     s = s < 10 ? '0' + s : s;
