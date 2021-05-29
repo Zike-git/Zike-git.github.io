@@ -1,7 +1,7 @@
   //1.获取元素
   var text = document.querySelector('#text');
   var btn = document.querySelector('button');
-  var ul = document.querySelector('ul');
+  var ul = document.querySelector('#liuyan');
   var appreant = ul.children;
 
   //2.注册事件
