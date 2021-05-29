@@ -29,6 +29,23 @@ body {
     /* z-index: -1; */
 }
 
+.zhongbiaoye {
+    position: absolute;
+    top: 10vh;
+    right: 40vh;
+    width: 30vh;
+    height: 10vh;
+    background-color: transparent;
+    border: 0.64285vh lightgrey solid;
+    border-radius: 1.2857vh;
+    font-size: 3.5714vh;
+    font-weight: 600;
+    font-family: 宋体;
+    color: rgb(145, 142, 142);
+    text-align: center;
+    line-height: 8vh;
+}
+
 li {
     /* 清除li元素前面的项目符号 */
     list-style: none;
