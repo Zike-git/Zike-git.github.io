@@ -13,26 +13,26 @@ body {
 
 .calendar {
     position: absolute;
-    left: 200px;
-    margin: 150px auto;
-    width: 350px;
-    height: 505px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border: 5px white solid;
-    border-radius: 30px;
+    /* left: 200px; */
+    margin: 19.2857vh auto;
+    width: 45vh;
+    height: 64.928vh;
+    padding-left: 2.5714vh;
+    padding-right: 2.5714vh;
+    padding-bottom: 2.5714vh;
+    border: 0.6428vh white solid;
+    border-radius: 3.857vh;
     background-color: mediumturquoise;
     user-select: none;
 
 }
 
 .contemporary {
-    margin: 20px auto;
-    width: 150px;
-    height: 150px;
+    margin: 2.5714vh auto;
+    width: 19.2857vh;
+    height: 19.2857vh;
     border-radius: 50%;
-    border: 5px white solid;
+    border: 0.6428vh white solid;
     text-align: center;
 
 }
@@ -41,10 +41,10 @@ body {
     position: relative;
     margin: 0 auto;
     display: flex;
-    padding-left: 5px;
-    height: 50px;
+    padding-left: 0.6428vh;
+    height: 6.428vh;
     width: 100%;
-    border: 3px white solid;
+    border: 0.3857vh white solid;
     align-items: center;
     justify-content: center;
 }
@@ -53,44 +53,47 @@ body {
     position: absolute;
     width: 0px;
     height: 0px;
-    left: 5px;
+    left: 0.6428vh;
     border-left: 0;
-    border-right: 10px white solid;
-    border-top: 10px transparent solid;
-    border-bottom: 10px transparent solid;
+    border-right: 1.2857vh white solid;
+    border-top: 1.2857vh transparent solid;
+    border-bottom: 1.2857vh transparent solid;
     cursor: pointer;
 }
 
 #next {
     position: absolute;
-    right: 5px;
+    right: 0.6428vh;
     width: 0px;
     height: 0px;
-    border-left: 10px white solid;
+    border-left: 1.2857vh white solid;
     border-right: 0px transparent solid;
-    border-top: 10px transparent solid;
-    border-bottom: 10px transparent solid;
+    border-top: 1.2857vh transparent solid;
+    border-bottom: 1.2857vh transparent solid;
     cursor: pointer;
 }
 
 #datenow {
     color: white;
-    font-size: 80px;
-    line-height: 100px;
+    width: 100%;
+    font-size: 10.2857vh;
+    line-height: 12.857vh;
 }
 
 #daynow {
     color: white;
-    font-size: 15px;
+    width: 100%;
+    font-size: 1.9285vh;
     font-weight: 400;
 }
 
 #month,
 #year {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 2.6428vh;
+    width: 100%;
+    padding-right: 0.6428vh;
     color: white;
-    font-size: 30px;
+    font-size: 3.857vh;
     font-weight: 300;
 }
 
@@ -98,39 +101,40 @@ body {
 
 .card>li {
     float: left;
-    width: 42.85px;
-    height: 20px;
+    width: 5.509285vh;
+    height: 2.5714vh;
     text-align: center;
-    line-height: 20px;
+    line-height: 2.5714vh;
 
 
 }
 
 .card {
-    margin: 15px 0;
-    margin-bottom: 5px;
-    font-size: 12px;
+    margin: 1.9285vh 0;
+    margin-bottom: 0.6428vh;
+    font-size: 1.54285vh;
     color: mediumturquoise;
     font-weight: 600;
-    height: 20px;
-    line-height: 20px;
+    height: 2.5714vh;
+    width: 100%;
+    line-height: 2.5714vh;
     background-color: white;
 }
 
 #add {
     display: inline-block;
     width: 100%;
-    height: 150px;
+    height: 19.2857vh;
 
 }
 
 #add>li {
     float: left;
-    width: 42.85px;
-    height: 35px;
+    width: 5.509285vh;
+    height: 4.5vh;
     text-align: center;
-    line-height: 35px;
-    font-size: 18px;
+    line-height: 4.5vh;
+    font-size: 2.31428vh;
     font-weight: 700;
     color: white;
     cursor: pointer;
@@ -141,13 +145,13 @@ body {
 #add>.now {
     background-color: white;
     color: mediumturquoise;
-    border-radius: 5px;
+    border-radius: 0.6428vh;
 }
 
 #add>.notnow:hover {
     background-color: white;
     color: mediumturquoise;
-    border-radius: 5px;
+    border-radius: 0.6428vh;
 }
 
 #add>.none {
