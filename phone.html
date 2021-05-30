@@ -137,14 +137,14 @@
         }
     })
     for (var i = 0; i < clickbox.length; i++) {
-        clickbox[i].addEventListener('click', function () {
-            if (this.parentNode.parentNode.children[1].style.display == 'block') {
-                this.parentNode.parentNode.children[1].style.display = 'none';
-                this.style.transform = 'rotate(0deg)';
+        clickbox[i].parentNode.addEventListener('click', function () {
+            if (this.parentNode.children[1].style.display == 'block') {
+                this.parentNode.children[1].style.display = 'none';
+                this.children[0].style.transform = 'rotate(0deg)';
 
             } else {
-                this.parentNode.parentNode.children[1].style.display = 'block';
-                this.style.transform = 'rotate(90deg)';
+                this.parentNode.children[1].style.display = 'block';
+                this.children[0].style.transform = 'rotate(90deg)';
 
             }
         })
