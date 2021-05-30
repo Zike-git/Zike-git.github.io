@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY HTML</title>
+    <link rel="stylesheet" href="nomalize.css">
+    <link rel="stylesheet" href="phone.css">
+    <script src="font_2518576_72ux393y9ty/iconfont.js"></script>
+    <style>
+        .icon {
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="welcome"></div>
+        <svg class="icon homefont" aria-hidden="true">
+            <use xlink:href="#icon-home-color"></use>
+        </svg>
+        <div class="myhtml">WELCOME TO MY HTML</div>
+        <svg class="icon navfont" aria-hidden="true">
+            <use xlink:href="#icon-data-source-color"></use>
+        </svg>
+        <svg class="icon userfont" aria-hidden="true">
+            <use xlink:href="#icon-portray-color"></use>
+        </svg>
+        <svg class="icon searchfont" aria-hidden="true">
+            <use xlink:href="#icon-soushuo-copy"></use>
+        </svg>
+        <ul id="nav">
+            <li>
+                <a href="javascript:;"><svg class="icon clickbox" aria-hidden="true">
+                        <use xlink:href="#icon-shangxiazuoyouTriangle12 "></use>
+                    </svg>学校学习</a>
+                <ol>
+                    <li><a href="https://www.tust.edu.cn/" target="_blank">天津科技大学</a></li>
+                    <li><a href="http://jw.tust.edu.cn/" target="_blank">天津科技大学教务处</a></li>
+                    <li><a href="https://www.tust.edu.cn/" target="_blank">天津科技大学第二课堂</a></li>
+                    <li><a href="https://www.tust.edu.cn/" target="_blank">智慧团建</a></li>
+                    <li><a href="https://www.cn-ki.net/" target="_blank">镜像知网</a></li>
+                    <li><a href="https://www.w3school.com.cn/" target="_blank">w3school</a></li>
+                    <li><a href="https://developer.mozilla.org/zh-CN/" target="_blank">MDN</a></li>
+
+                </ol>
+            </li>
+            <li>
+                <a href="javascript:;"><svg class="icon clickbox" aria-hidden="true">
+                        <use xlink:href="#icon-shangxiazuoyouTriangle12 "></use>
+                    </svg>图片壁纸</a>
+                <ol>
+                    <li><a href="https://pic.netbian.com/" target="_blank">彼岸图网</a></li>
+                    <li><a href="https://mixkit.co/" target="_blank">高质量图片</a></li>
+                    <li><a href="http://duososo.com/index.php" target="_blank">图片搜索</a></li>
+
+                </ol>
+            </li>
+            <li>
+                <a href="javascript:;"><svg class="icon clickbox" aria-hidden="true">
+                        <use xlink:href="#icon-shangxiazuoyouTriangle12 "></use>
+                    </svg>创作素材</a>
+                <ol>
+                    <li><a href="https://www.iconfont.cn/" target="_blank">阿里矢量图标</a></li>
+                    <li><a href="https://ziyouziti.com/" target="_blank">免费字体</a></li>
+                    <li><a href="https://www.ear0.com/" target="_blank">自由之聆</a></li>
+
+                </ol>
+            </li>
+            <li>
+                <a href="javascript:;"><svg class="icon clickbox" aria-hidden="true">
+                        <use xlink:href="#icon-shangxiazuoyouTriangle12 "></use>
+                    </svg>视频音乐</a>
+                <ol>
+                    <li><a href="https://www.cupfox.com/" target="_blank">茶杯狐</a></li>
+                    <li><a href="https://www.dadatuw.com/" target="_blank">达达兔</a></li>
+                    <li><a href="https://www.bilibili.com/" target="_blank">B站</a></li>
+                    <li><a href="http://47.112.23.238/" target="_blank">免费音乐</a></li>
+
+                </ol>
+            </li>
+            <li>
+                <a href="javascript:;"><svg class="icon clickbox" aria-hidden="true">
+                        <use xlink:href="#icon-shangxiazuoyouTriangle12 "></use>
+                    </svg>模板</a>
+                <ol>
+                    <li><a href="https://www.woodo.cn/template/?type=slides" target="_blank">ppt模板</a></li>
+                    <li><a href="http://www.1ppt.com/" target="_blank">免费ppt模板</a></li>
+                    <li><a href="https://www.ypppt.com/" target="_blank">免费ppt模板</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="javascript:;"><svg class="icon clickbox" aria-hidden="true">
+                        <use xlink:href="#icon-shangxiazuoyouTriangle12 "></use>
+                    </svg>资源</a>
+                <ol>
+                    <li><a href="https://adzhp.cn/" target="_blank">爱达杂货铺</a></li>
+                    <li><a href="http://softgj.com/" target="_blank">软件管家</a></li>
+                    <li><a href="https://www.mac-soft.cn/" target="_blank">麦克软件园</a></li>
+                    <li><a href="https://iao.su/" target="_blank">分享为王</a></li>
+                    <li><a href="https://greasyfork.org/zh-CN" target="_blank">脚本</a></li>
+                </ol>
+            </li>
+
+        </ul>
+    </div>
+    <div class="main">
+
+    </div>
+</body>
+<script>
+    var navfont = document.querySelector('.navfont');
+    var nav = document.querySelector('#nav');
+    var clickbox = document.querySelectorAll('.clickbox');
+
+    // var ol = clickbox[i].parentNode.parentNode.children[1];
+    // console.log(ol);
+    var flag1 = 1;
+    navfont.addEventListener('click', function () {
+        for (var i = 0; i < clickbox.length; i++) {
+            clickbox[i].parentNode.parentNode.children[1].style.display = 'none';
+        }
+        if (flag1) {
+            nav.style.display = 'block';
+            flag1 = 0;
+        } else {
+            nav.style.display = 'none';
+            flag1 = 1;
+        }
+    })
+    for (var i = 0; i < clickbox.length; i++) {
+        clickbox[i].addEventListener('click', function () {
+            if (this.parentNode.parentNode.children[1].style.display == 'block') {
+                this.parentNode.parentNode.children[1].style.display = 'none';
+                this.style.transform = 'rotate(0deg)';
+
+            } else {
+                this.parentNode.parentNode.children[1].style.display = 'block';
+                this.style.transform = 'rotate(90deg)';
+
+            }
+        })
+    }
+</script>
+
+</html>
