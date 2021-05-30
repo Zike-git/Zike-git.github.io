@@ -80,27 +80,29 @@
 // ------------------------------------------------------------------------------------
 })
       // 倒计时的js-------------------------------------------------------------
+      var settime='2021-6-12 09:00:00';
+     
+      function countdown() {
+            var nowtime = +new Date();
+            var inputtime = +new Date(settime);
+            var seconds = (inputtime - nowtime) / 1000;
 
-    setInterval("countdown('2021-6-12 09:00:00')", " 1000"); //每隔1000ms调用一次
-    function countdown(settime) {
-        var nowtime = +new Date();
-        var inputtime = +new Date(settime);
+            var d = parseInt(seconds / 60 / 60 / 24);
+            d = d < 10 ? '0' + d : d;
+            var h = parseInt(seconds / 60 / 60 % 24);
+            h = h < 10 ? '0' + h : h;
+            var m = parseInt(seconds / 60 % 60);
+            m = m < 10 ? '0' + m : m;
+            var s = parseInt(seconds % 60);
+            s = s < 10 ? '0' + s : s;
+            document.getElementById('day').innerHTML = d;
+            document.getElementById('hour').innerHTML = h;
+            document.getElementById('minute').innerHTML = m;
+            document.getElementById('second').innerHTML = s;
+    };
+    countdown();
+    setInterval(countdown, " 1000"); //每隔1000ms调用一次
     
-        var seconds = (inputtime - nowtime) / 1000;
-
-        var d = parseInt(seconds / 60 / 60 / 24);
-        d = d < 10 ? '0' + d : d;
-        var h = parseInt(seconds / 60 / 60 % 24);
-        h = h < 10 ? '0' + h : h;
-        var m = parseInt(seconds / 60 % 60);
-        m = m < 10 ? '0' + m : m;
-        var s = parseInt(seconds % 60);
-        s = s < 10 ? '0' + s : s;
-        document.getElementById('day').innerHTML = d;
-        document.getElementById('hour').innerHTML = h;
-        document.getElementById('minute').innerHTML = m;
-        document.getElementById('second').innerHTML = s;
-};
 
   
   
