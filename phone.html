@@ -121,20 +121,19 @@
     var navfont = document.querySelector('.navfont');
     var nav = document.querySelector('#nav');
     var clickbox = document.querySelectorAll('.clickbox');
-
+    var main = document.querySelector('.main');
     // var ol = clickbox[i].parentNode.parentNode.children[1];
     // console.log(ol);
-    var flag1 = 1;
+
     navfont.addEventListener('click', function () {
         for (var i = 0; i < clickbox.length; i++) {
             clickbox[i].parentNode.parentNode.children[1].style.display = 'none';
         }
-        if (flag1) {
+        if (nav.style.display == 'none') {
             nav.style.display = 'block';
-            flag1 = 0;
         } else {
             nav.style.display = 'none';
-            flag1 = 1;
+
         }
     })
     for (var i = 0; i < clickbox.length; i++) {
@@ -150,6 +149,9 @@
             }
         })
     }
+    main.addEventListener('click', function () {
+        nav.style.display = 'none';
+    })
 </script>
 
 </html>
