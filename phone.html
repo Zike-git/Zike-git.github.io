@@ -8,6 +8,7 @@
     <title>MY HTML</title>
     <link rel="stylesheet" href="nomalize.css">
     <link rel="stylesheet" href="phone.css">
+    <link rel="stylesheet" href="留言板.css">
     <script src="font_2518576_72ux393y9ty/iconfont.js"></script>
     <style>
         .icon {
@@ -18,6 +19,11 @@
             fill: currentColor;
             overflow: hidden;
             float: right;
+            cursor: pointer;
+        }
+
+        .icon:active {
+            background-color: aquamarine;
         }
     </style>
 </head>
@@ -114,21 +120,36 @@
         </ul>
     </div>
     <div class="main">
+        <div class="message">
+            <textarea name="hello" id="text" cols="40" rows="5" placeholder="期待您的留言..."></textarea>
+            <button>留言</button>
+            <div class="showtext">
+                <ul>
+                    <li class="appreant">
+                        功能完善中......</li>
 
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 <script>
     var navfont = document.querySelector('.navfont');
+    var homefont = document.querySelector('.homefont');
     var nav = document.querySelector('#nav');
     var clickbox = document.querySelectorAll('.clickbox');
     var main = document.querySelector('.main');
     // var ol = clickbox[i].parentNode.parentNode.children[1];
     // console.log(ol);
-
+    homefont.addEventListener('click', function () {
+        window.location.href = 'https://zkcollect.top/phone.html';
+    })
     navfont.addEventListener('click', function () {
         for (var i = 0; i < clickbox.length; i++) {
             clickbox[i].parentNode.parentNode.children[1].style.display = 'none';
+            clickbox[i].parentNode.children[0].style.transform = 'rotate(0deg)';
         }
+
         if (nav.style.display == 'none') {
             nav.style.display = 'block';
         } else {
@@ -153,5 +174,6 @@
         nav.style.display = 'none';
     })
 </script>
+<script src="留言板.js"></script>
 
 </html>

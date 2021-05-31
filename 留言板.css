@@ -1,10 +1,7 @@
-div,
-body,
-ul,
-li {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 li {
@@ -12,44 +9,40 @@ li {
 }
 
 .message {
-    position: absolute;
-    right: 12vh;
-    width: 77.142vh;
-    height: 77.142vh;
-
-    /* margin: 0; */
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 100px auto;
     /* border: 5px lightgrey solid; */
-    border-radius: 1.2857vh;
+    border-radius: 10px;
 }
 
 #text {
     position: absolute;
-    padding: 0.64285vh;
-    top: 2.82854vh;
-    left: 2.18569vh;
-    font-size: 2.5714vh;
+    padding: 5px;
+    width: 65%;
+    left: 5px;
+    font-size: 16px;
     font-weight: 600;
     vertical-align: bottom;
     overflow-y: visible;
     resize: none;
-    border: 0.64285vh lightgrey solid;
-    border-radius: 1.2857vh;
+    border: 5px lightgrey solid;
+    border-radius: 10px;
     outline: none;
-    background-color: transparent;
 }
 
 button {
     position: absolute;
-    right: 2.5714vh;
-    top: 6.4285vh;
-    width: 10.2857vh;
-    /* height: 5.14285vh; */
-    font-size: 2.5714vh;
+    right: 5px;
+    top: 30px;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
     font-weight: 600;
-    border-radius: 1.2857vh;
-    line-height: 5.14285vh;
-    border: 0.6428vh lightgrey solid;
-    background-color: transparent;
+    border-radius: 10px;
+    border: 5px lightgrey solid;
+    background-color: #fff;
     cursor: pointer;
 }
 
@@ -63,26 +56,26 @@ button:active {
 
 .showtext {
     position: relative;
-    top: 23.14285vh;
+    top: 180px;
     /* background-color: aqua; */
-    width: 77.1428vh;
+    width: 100%;
     /* height: 200px; */
-    border-top: 0.6428vh lightgrey solid;
-    border-bottom: 0.6428vh lightgrey solid;
+    border-top: 5px lightgrey solid;
+    border-bottom: 5px lightgrey solid;
 
 }
 
 .showtext ul li {
-    margin-top: 2.82854vh;
-    padding: 0.6428vh;
-    margin: 2.82854vh auto;
-    width: 64.285vh;
-    font-size: 2.5714vh;
+    margin-top: 22px;
+    padding: 5px;
+    margin: 22px auto;
+    width: 90%;
+    font-size: 20px;
     font-weight: 600;
     color: rgb(145, 142, 142);
     font-family: 宋体;
-    border: 0.6428vh lightgrey solid;
-    border-radius: 1.2857vh;
+    border: 5px lightgrey solid;
+    border-radius: 10px;
     text-align: justify;
 
 }
